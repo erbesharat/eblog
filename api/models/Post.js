@@ -7,6 +7,18 @@
 
 module.exports = {
   attributes: {
+    title: {
+     type: 'string',
+     required: true
+   },
+   author: {
+     type: 'string',
+     defaultsTo: 'Anonymous'
+   },
+   body: {
+     type: 'text',
+     required: true
+   }
   }
 };
 
