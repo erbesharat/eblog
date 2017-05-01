@@ -34,7 +34,12 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+  'post /post': 'PostsController.create',
+  'get /post': 'PostsController.index',
+  'get /post/:id': 'PostsController.show',
+  'delete /post/:id': 'PostsController.delete',
+  'patch /post/:id': 'PostsController.update'
 
   /***************************************************************************
   *                                                                          *
